@@ -16,23 +16,27 @@ class square():
         """
         variable innititalization
         """
+
         for key, value in kwargs.items():
             setattr(self, key, value)
 
     def area_of_my_square(self):
         """ Area of the square """
+
         return self.width * self.height
 
     def PermiterOfMySquare(self):
         """
         finds the perimeter of the square
         """
+
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
         """
         string representation of the class
         """
+
         return "{}/{}".format(self.width, self.height)
 
 
